@@ -2,8 +2,8 @@ var playerOne = {
   score: 0,
   name: "tom",
 };
-var totalScre =0;
-
+var totalScre = 0;
+var scoreArray = [];
 
 
 $(document).ready(function(){
@@ -20,4 +20,10 @@ $(document).ready(function(){
   }
   $("div.output").text(totalScre);
   });
+//function for when the player holds
+$("button#hold1").click(function(){
+  scoreArray.push(totalScre);
+  alert(scoreArray);
+})
+
 });
