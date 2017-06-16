@@ -18,12 +18,12 @@ $(document).ready(function(){
     console.log("keep playing")
   totalScre+=score1;
   }
-  $("div.output").text(totalScre);
+  $("div.output").text("score" + " " + totalScre);
   });
 //function for when the player holds
 $("button#hold1").click(function(){
   scoreArray.push(totalScre);
-  alert(scoreArray);
+$("div.output1").append("hold score is" + " " + scoreArray);
 })
 
 });
